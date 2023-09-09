@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shivanjali's Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body
+            {
+                background-color: rgb(14, 1, 41);
+                color:white;
+                font-family: 'Poppins', sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items:center;
+                height: 80px;
+                background-color: rgb(1, 0, 18);
+            }
+            nav ul{
+                display: flex;
+                justify-content: center;
+            }
+            nav ul li{
+                list-style: none;
+                margin: 23px;
+            }
+            nav ul li a{
+                text-decoration: none;
+               color: white;
+            }
+            nav ul li a:hover{
+                color: rgb(159, 159, 240);
+            }
+            .left{
+                font-size: 1.5rem;
+            }
+            .firstsection{
+                display: flex;
+                justify-content: space-around;
+                margin: 80px 0;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+            .firstsection >div{
+                width:30%;
+                
+            }
+            .icon-card {
+  background-color: white;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+            .rightsection {
+             color: white; 
+             font-size: 2rem;
+             margin-left: 15%;
+             margin-right: 20%; 
+             
+            }
+            .secondsection{
+                margin-left: 60%;
+            }
+            .purple{
+                color: rgb(138, 136, 136);
+            }
+            #element{
+                color: rgb(138, 136, 136);
+            }
+            .more-about {
+  background-color: white;
+  padding: 1rem 6rem;
+}
+
+.more-about h2 {
+  margin-bottom:2%;
+  text-align: center;
+  margin-top: 1%;
+  color: black;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  text-align: center;
+  color: black;
+ margin-bottom: 10%;
+  
+
+}
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+   margin-bottom: 10%;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+  margin-top: 10%;
+    
+  
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+}
+.more-about img {
+    padding: 1.25rem;
+    width: 11.875rem;
+  height: 11.25rem;
+  margin-left: 34rem;
+  margin-top: 10%;
+               
+}
+.projects {
+  background-color: white;
+  padding: 32px 0;
+  margin-top: 2rem;
+
+}
+
+.project-pic {
+  width: 50%;
+  height: 50%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+                margin-bottom: 10%;
+}   
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;
+  margin-top: 10%;
+   
+}
+
+.project-container {
+  text-align: center;
+  width: 100%;
+ 
+}  
+.project-container p {
+  padding: 0.4rem;
+ 
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+ color: black;
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+  color: black;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}   
+.contact {
+  margin-top: 2rem;
+  background-color:  rgb(14, 1, 41);
+  ;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+ 
+   
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+} 
+   .contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+.submit-btn:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 10%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+.footer{
+    text-align: center;
+}
+
+        </style>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <div class="left">Shivanjali's Portfolio</div>
+                    <div class="right"></div>
+                    <ul>
+                        <li><a></a> </li>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Projects</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="firstsection">
+                    <div class="leftsection"></div>
+                   <img src="https://static.wixstatic.com/media/c298a2_29917527464246a1b5f6054acd214af1~mv2.png/v1/fill/w_560,h_308,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/zoho-developers.png">
+                    </div>
+                    <div class="rightsection">
+                     <div>Hi,My name is <span class="purple">Shivanjali</span></div>  
+                     <div>I am a passionate</div> 
+                     <span id="element"></span> 
+                    
+                </div>
+
+                </section>
+                <hr style="
+                border: 0;
+                background-color:rgb(66, 65, 65) ;
+                height: 1.5px;"
+                >
+                <section class="more-about">
+                    <img src="https://stickerswiki.ams3.cdn.digitaloceanspaces.com/chimatemiells/1467120.512.webp">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a web developer with a strong background in front-end and back-end development. 
+                        I have expertise in HTML, CSS, JavaScript, and several programming languages like Python,
+                         PHP, and Ruby.
+                        I'm skilled in building responsive and user-friendly websites and web applications,
+                         ensuring optimal performance and cross-browser compatibility.
+                    </p>
+                  </section>
+                  <hr style="
+                border: 0;
+                background-color:rgb(66, 65, 65) ;
+                height: 1.5px;"
+                >
+                  <section class="skills" id="skills">
+                    <h2 class="skill-header">My Top Skills</h2>
+              
+                    <div class="skills-wrapper">
+                      <div class="first-set animate__animated animate__pulse">
+                        <img
+                          src="https://www.shareicon.net/download/2016/08/01/639868_development.ico"
+                          alt=""
+                          loading="lazy"
+                          class="icon icon-card"
+                        />
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
+                          alt=""
+                          loading="lazy"
+                          class="icon icon-card"
+                        />
+                        <img
+                          src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
+                          alt=""
+                          loading="lazy"
+                          class="icon icon-card"
+                        />
+                      </div>
+              
+                      <div class="second-set animate__animated animate__pulse">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                          alt=""
+                          loading="lazy"
+                          class="icon icon-card"
+                        />
+                       
+                      </div>
+                    </div>
+                  </section>
+                  <section class="projects" id="projects">
+                    <h2 class="projects-title">Some of my Recent Projects</h2>
+                    <div class="projects-container">
+                      <div class="project-container project-card">
+                        <img
+                          src="C:\Users\Bhanudas Mote\OneDrive\Pictures\online learning 1.jpg"
+                          alt="expense-tracker"
+                          loading="lazy"
+                          class="project-pic"
+                        />
+                        <h3 class="project-title">Online Learning Portal</h3>
+                        <p class="project-details">
+                            Lakshya is the idea with which we aim to collect the best learning material 
+                            on the internet and present it to the user of our site in a catalogued way, 
+                            so that the user may not face any difficulty in finding learning material.   
+                      </p>
+                      </div>
+                      <div class="project-container project-card">
+                        <img
+                          src="C:\Users\Bhanudas Mote\OneDrive\Pictures\Screenshots\Screenshot 2023-09-09 184957.png"
+                          alt="netflic-clone"
+                          loading="lazy"
+                          class="project-pic"
+                        />
+                        <h3 class="project-title">Harvestify</h3>
+                        <p class="project-details">
+                            This project is a machine learning based website that recommends the farmers: 
+                            The best crops to grow, The best fertilizers to use  
+                        </p>
+                      </div>
+                    </div>
+                    <section class="contact" id="contact">
+                        <h2>Get In Touch With Me</h2>
+                        <div class="contact-form-container">
+                          <div class="contact-form">
+                            <form action="https://formspree.io/f/xyylngw" method="POST">
+                              <div class="form-control">
+                                <label for="name">Name</label>
+                                <input
+                                  type="text"
+                                  id="name"
+                                  name="sender-name"
+                                  placeholder="Enter Your Name"
+                                  class="input-field"
+                                  required
+                                />
+                              </div>
+                              <div class="form-control">
+                                <label for="email">Email</label>
+                                <input
+                                  type="email"
+                                  id="email"
+                                  name="sender-email"
+                                  placeholder="Enter Your Email"
+                                  class="input-field"
+                                  required
+                                />
+                              </div>
+                              <div class="form-control">
+                                <label for="message">Message</label>
+                                <textarea
+                                  id="message"
+                                  cols="60"
+                                  rows="10"
+                                  placeholder="Enter Your Message"
+                                  name="message"
+                                  class="input-field"
+                                  required
+                                ></textarea>
+                              </div>
+                              <input
+                                type="submit"
+                                value="Submit"
+                                id="submit-btn"
+                                class="submit-btn"
+                              />
+                            </form>
+                          </div>
+                        </div>
+                      </section>
+                      <div class="socials">
+                        <a href="#" target="_blank"
+                          ><img
+                            src="https://static.vecteezy.com/system/resources/previews/018/930/745/original/twitter-logo-twitter-icon-transparent-free-free-png.png"
+                            alt="Twitter"
+                            loading="lazy"
+                            class="socicon"
+                        /></a>
+                        <a href="#" target="_blank"
+                          ><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                            alt="Instagram"
+                            loading="lazy"
+                            class="socicon"
+                        /></a>
+                        <a href="#" target="_blank"
+                          ><img
+                            src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png"
+                            alt="Linkedin"
+                            loading="lazy"
+                            class="socicon"
+                        /></a>
+                       
+                  </section>
+                  <footer>
+                    <span>Created By <a href="shivanjalimote1719">shivanjalimote1719@gmail.com</a> | <span class="far fa-copyright"></span> Shivanjali Mote.</span>
+                </footer>
+            
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', {
+                  strings: ['Web developer','and Data Analyst.'],
+                  typeSpeed: 50,
+                });
+              </script>
+        </body>
+        </html>
